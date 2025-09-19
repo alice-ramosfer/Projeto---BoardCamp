@@ -99,7 +99,7 @@ project/
 
 ## 💾 Banco de Dados
 
-### Crie um banco de dados chamado "boardcamp"
+### Crie um banco de dados chamado "boardcamp" no postgresql
 
 ### Crie as tabelas
 ```sql
