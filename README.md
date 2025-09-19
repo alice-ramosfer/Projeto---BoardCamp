@@ -20,43 +20,43 @@ API para gerenciamento de aluguel de jogos, permitindo cadastro de clientes, jog
 
 project/  
 │    
-├── controllers/        # Lógica das rotas  
+│── controllers/        # Lógica das rotas  
 │   ├── customers.controllers.js  
 │   ├── games.controllers.js  
 │   └── rentals.controllers.js    
-├──  database          # Ponto de entrada do servido  
+│──  database          # Ponto de entrada do servido  
 │   └── database.js  
 │   
-├── middlewares/        # Middlewares de validação e erro  
+│── middlewares/        # Middlewares de validação e erro  
 │   ├── errorHandler.middleware.js  
 │   └── validateSchema.middleware.js  
 │  
-├── repositories/       # Acesso ao banco de dados  
+│── repositories/       # Acesso ao banco de dados  
 │   ├── customers.repositories.js  
 │   ├── games.repositories.js  
 │   └── rentals.repositories.js  
 │  
 │  
-├── routers/            # Rotas da API  
+│── routers/            # Rotas da API  
 │   ├── customers.routers.js  
 │   ├── games.routers.js  
 │   └── rentals.routers.js  
 │  
-├── schemas/           # Lógica de validação dos schema  
+│── schemas/           # Lógica de validação dos schema  
 │   ├── customers.schemas.js  
 │   ├── games.schemas.js  
 │   └── rentals.schemas.js  
 │  
-├── services/           # Lógica de negócio e validações  
+│── services/           # Lógica de negócio e validações  
 │   ├── customers.services.js  
 │   ├── games.services.js  
 │   └── rentals.services.js  
 │  
-├── utils/              # Funções utilitárias  
+│── utils/              # Funções utilitárias  
 │   └── formatDate.js  
 │  
-├── .env                # Variáveis de ambiente  
-├── package.json  
+│── .env                # Variáveis de ambiente  
+│── package.json  
 
 
 ---
@@ -93,7 +93,7 @@ project/
 
 ### Execute o servidor
 
-  `npm run dev`
+  `npm start`
 
 ---
 
