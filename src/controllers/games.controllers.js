@@ -7,5 +7,5 @@ export async function getGames(req,res){
 
 export async function postGames(req,res) {
     await gamesServicies.postGames(req.body);
-    res.sendSatatus(201);
+    res.sendStatus(201);
 }

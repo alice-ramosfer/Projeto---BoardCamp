@@ -11,6 +11,7 @@ async function getCustomers() {
 }
 
 async function getCustomersId(id) {
+
     const result = await db.query(`SELECT * FROM customers WHERE customers.id=$1;`,[id])
     return result;
 }

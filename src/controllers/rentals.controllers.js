@@ -1,5 +1,9 @@
 import { rentalsServices } from "../services/rentals.servicies.js";
 import { formatDate } from "../utils/formatDate.js";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 63be9f1 (arrumando a função de deletar oa aluguel e procurar um cliente pelo id)
 
 export async function getRentals(req,res) {
     const result = await rentalsServices.getRentals();

@@ -4,7 +4,7 @@ async function getCustomers() {
    return await customersRepositories.getCustomers();
 }
 
-async function getCustomersId(id) {
+async function getCustomersId({id}) {
     const result = await customersRepositories.getCustomersId(id);
     if (result.rowCount === 0) throw {type:"NotFound", message:"usuário não encontrado com esse id"};
     return result.rows;

@@ -50,6 +50,8 @@ async function deleteRental({id}) {
     const resultRental = await rentalsRepositories.getRentalId(id)
     if(resultRental.rowCount === 0) throw {type:"NotFound", message:"aluguel não encontrado"};
     if(resultRental.rows[0].returnDate === null) throw {type:"Bad_Request", message:"aluguel não finalizado"}
+
+    await rentalsRepositories.deleteRental(id);
 }
 
 export const rentalsServices = {
