@@ -1,10 +1,5 @@
 import { rentalsServices } from "../services/rentals.servicies.js";
 import { formatDate } from "../utils/formatDate.js";
-<<<<<<< HEAD
-=======
-
->>>>>>> 63be9f1 (arrumando a função de deletar oa aluguel e procurar um cliente pelo id)
-
 export async function getRentals(req,res) {
     const result = await rentalsServices.getRentals();
      const resultFormatted = result.map(rental => ({
@@ -16,11 +11,9 @@ export async function getRentals(req,res) {
             name: rental.customer
         },
         game: {            
-        customer: {        
-            id: rental.customerId,
-            name: rental.customer
+            id: rental.gameId,
+            name: rental.game
         }
-        } 
     }));
     return res.status(200).send(resultFormatted);
 }
